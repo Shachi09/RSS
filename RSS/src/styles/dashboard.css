@@ -1,0 +1,86 @@
+:root{
+    --primaryOrange: #F74F06;
+    --lightOrange: #FE7F44;
+    --white: #ffffff;
+  }
+
+.dashboard-container {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* font-family: Arial, sans-serif; */
+  }
+  
+  .sidebar {
+    width: 300px;
+    background-color: var(--lightOrange);
+    color: var(--white);
+    padding: 20px;
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
+  .logo img {
+    max-width: 100%;
+  }
+  
+  .filters {
+    margin-top: 20px;
+  }
+  
+  .filter {
+    margin-bottom: 20px;
+  }
+  
+  .filter label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .filter input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .buttons button {
+    width: 48%;
+    padding: 10px;
+    background-color: var(--white);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .content h2 {
+    margin-top: 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    border: 1px solid var(--lightOrange);
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table th {
+    border: 1px solid var(--lightOrange);
+    color: var(--lightOrange);
+  }
+  

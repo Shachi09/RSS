@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap');
+
+
+
+.Sidebar{
+  width: 30%;
+  height: 100vh;
+  background-color: #FE7F44;
+}
+
+.sidebar_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img{
+  height: 70px;
+  text-align: center;
+  /* height: 20%; */
+}
+
+.logo h1{
+  font-size: 25px;
+  color: white;
+  margin-top: 10px;
+  font-family: "Tiro Devanagari Marathi", serif;
+}
+
+.year{
+  background-color: orangered;
+  display: flex;
+  flex-direction: column;
+}
+
+.year h4{
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  padding: 4px 0;
+  font-family: "Tiro Devanagari Marathi", serif;
+  margin-bottom: 0px !important;
+}
+
+.year_input{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+}
+
+label{
+  color: orange;
+  font-family: "Tiro Devanagari Marathi", serif;
+}
+
+input{
+  border: 0.5px solid #a09a9a;
+  padding: 5px;
+  font-family: "Tiro Devanagari Marathi", serif;
+}
+
+.buttons{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+
+
+
+button{
+  font-size: 17px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  font-weight: 400;
+  width: 100%;
+  color: #f74f06;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+/* 
+.Sidebar {
+  width: 20%;
+  background-color: hsl(19, 99%, 63%);
+  padding: 20px 0;
+}
+
+.sidebar_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.logo h1 {
+  font-family: "Tiro Devanagari Marathi", serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 46.1px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.year {
+  width: 100%;
+  height: 250px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.year_heading button {
+  background-color: #f74f06;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  font-family: "Tiro Devanagari Marathi", serif;
+  font-size: 24px;
+  font-weight: 400;
+  width: 100%;
+  border: 1px solid #f74f06;
+  color: #ffffff;
+}
+
+.year_input {
+  display: flex;
+  flex-direction: column;
+}
+
+.year_input label {
+  font-family: "Tiro Devanagari Marathi", serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #fe7f44;
+}
+
+.year_input input {
+  border: 0.5px solid #a09a9a;
+  padding: 5px;
+  background-color: #ffffff;
+  color: #454749;
+  outline: none;
+}
+
+.dayitva {
+  width: 100%;
+  height: 120px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.dayitva_heading button {
+  background-color: #f74f06;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  font-family: "Tiro Devanagari Marathi", serif;
+  font-size: 24px;
+  font-weight: 400;
+  width: 100%;
+  border: 1px solid #f74f06;
+  color: #ffffff;
+}
+
+.dayitva_input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dayitva_input input {
+  font-family: "Tiro Devanagari Marathi", serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  color: #454749;
+  outline: none;
+  padding: 5px;
+  border: 0.5px solid #a09a9a;
+}
+
+.name {
+  width: 100%;
+  height: 120px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.name_heading button {
+  background-color: #f74f06;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  font-family: "Tiro Devanagari Marathi", serif;
+  font-size: 24px;
+  font-weight: 400;
+  width: 100%;
+  border: 1px solid #f74f06;
+  color: #ffffff;
+}
+
+.name_input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name_input input {
+  font-family: "Tiro Devanagari Marathi", serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  color: #454749;
+  outline: none;
+  padding: 5px;
+  border: 0.5px solid #a09a9a;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.buttons button {
+  box-shadow: 0px 4px 4px 0px #00000040;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 8px 0;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #FE7F44;
+} */

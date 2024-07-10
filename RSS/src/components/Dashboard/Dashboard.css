@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap");
+.dashboard {
+  padding: 20px;
+}
+
+.dashboard h1 {
+  color: #454749;
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 36.46px;
+  text-align: left;
+}
+.tabel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  /* margin: 0 auto; */
+  background-color: white;
+  border: 1px solid #ff7f50;
+}
+
+th,
+td {
+  border: 1px solid #ff7f50;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  /* background-color: #FF7F50; */
+  color: #ea550f;
+}
+
+.sub-header th {
+  background-color: #fe7f44;
+  color: white;
+}
+
+td table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td table th,
+td table td {
+  border: 1px solid #ddd;
+}
+
+td table th {
+  background-color: #efeaea !important;
+  color: #ea550f;
+}
