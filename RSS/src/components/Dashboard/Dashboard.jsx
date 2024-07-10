@@ -4125,7 +4125,7 @@ function Dashboard() {
                     onChange={(e)=>{
                         setData('dayitva', e.target.value)
                     }}
-                    className="form-control"
+                    className="form-control sidebar-control"
                     placeholder="दायित्व"
                 >
                     <option value="">दायित्व चुनें</option>
@@ -4163,14 +4163,14 @@ function Dashboard() {
       </div>
     </div>
     <div className="dashboard container-fluid">
-        <h1>Results</h1>
+        <h1>परिणाम :</h1>
     <div className="tabel">
         <table className="tabel_one">
             <thead>
               <tr>
-                <th>Duration</th>
-                <th>Dayitva</th>
-                <th>Name</th>
+                <th>कालावधी</th>
+                <th>दायित्व</th>
+                <th>नाम</th>
               </tr>
             </thead>
 
@@ -4178,7 +4178,13 @@ function Dashboard() {
               {
                 resultData?.map((user, index)=>(
                   <tr key={index}>
-                    <td>{`${formatDisplayDate(user?.startDate)} To ${formatDisplayDate(user?.endDate)}`}</td>
+                    <td>
+                      {/* {`${formatDisplayDate(user?.startDate)} से ${formatDisplayDate(user?.endDate)} तक`} */}
+                      {formatDisplayDate(user?.startDate)} 
+      <span style={{ color: '#F74F06' }}> से </span> 
+      {formatDisplayDate(user?.endDate)} 
+      <span style={{ color: '#F74F06' }}> तक</span>  
+                    </td>
                     <td>{user.dayitva}</td>
                     <td>{user.name}</td>
                   </tr>
