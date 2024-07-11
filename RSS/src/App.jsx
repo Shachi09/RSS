@@ -7,13 +7,18 @@ import Login from "./components/Login.jsx";
 
 function App() {
 
+  const isUserLoggedIn = sessionStorage.getItem('isUserLoggedIn') === 'true';
+
   return (
     <>
 
 <Router>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/dashboard" element={<Home/>} />
+        <Route
+          path="/dashboard"
+          element={isUserLoggedIn ? <Home /> : <Navigate to="/" />}
+        />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
